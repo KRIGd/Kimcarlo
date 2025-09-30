@@ -90,3 +90,8 @@ button:hover {
     font-size: 12px;
   }
 }
+
+.center-title {
+  text-align: center;
+  width: 100%;
+}
