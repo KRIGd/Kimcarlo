@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Consolas, 'Courier New', monospace;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  color: #4fc3f7;
+  margin-bottom: 20px;
+}
+
+.code-container {
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  max-height: 60vh;
+  overflow: hidden;
+}
+
+.line-numbers {
+  background-color: #252526;
+  padding: 10px;
+  text-align: right;
+  user-select: none;
+  color: #858585;
+  white-space: pre;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+pre {
+  margin: 0;
+  flex: 1;
+  padding: 10px;
+  overflow: auto;
+  white-space: pre;
+}
+
+/* Sync scrollbars */
+.code-container .line-numbers,
+.code-container pre {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.button-container {
+  margin-top: 15px;
+}
+
+button {
+  background-color: #0e639c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #1177bb;
+}
